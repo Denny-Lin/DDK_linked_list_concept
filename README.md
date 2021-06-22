@@ -1,9 +1,10 @@
 # DDK_linked_list_sample
 It is a sample linked list.
 
-* we can code it in a few minitues.
+* we can code linked_list in a few minitues.
 * The rules are bellow:
-  1. Think the structure.
-  2.
+  1. Think the node structure.
+  2. think a function to add node.
+  3. ...
   
 
