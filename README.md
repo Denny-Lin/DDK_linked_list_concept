@@ -2,6 +2,7 @@
 It is a sample linked list.
 
 * we can code it in a few minitues.
-* The rule is bellow:
-  * 123   
+* The rules are bellow:
+  1 Think the structure.
+  2    
 
