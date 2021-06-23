@@ -11,9 +11,9 @@ It is a sample linked list.
   6. We need to repalce the address of the head_node with the address of head'next_node.  
   ```C
   void delete_first_node(node_t* head){
-    node_t* tmp=head;
-
     if(head==NULL) return;
+    
+    node_t* tmp=head;
 
     tmp=tmp->next;
     free(head);
