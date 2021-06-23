@@ -20,5 +20,8 @@ It is a sample linked list.
     *head=*tmp;
   }
   ```
+* Smart people use the trick below:  
+![image](https://user-images.githubusercontent.com/67073582/123027528-8c19d300-d410-11eb-9faf-719d9f681bf3.png)
+
   
 
