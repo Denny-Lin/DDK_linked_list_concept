@@ -9,6 +9,8 @@ It is a sample linked list.
   4. Think how to use this function to extend to the other functions, ex, delete first, last, .
   5. Let us focus on the function of delete_first_node.
   6. We need to repalce the address of the head_node with the address of head'next_node.  
+  7. Because node_t* head means "head is a pointer to node_t".
+  8. This "* head" save a data of a structure's first memory address. 
   ```C
   void delete_first_node(node_t* head){
     if(head==NULL) return;
