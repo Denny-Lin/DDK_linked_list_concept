@@ -10,7 +10,7 @@ It is a sample linked list.
   5. Let us focus on the function of delete_first_node.
   6. We need to repalce the address of the head_node with the address of head'next_node.  
   7. Because "node_t* head" means "head is a pointer to node_t".
-  8. This "head" save a data of a structure's first memory address. 
+  8. This "head" save the first memory address of the structure "node_t". 
   9. We use "* " to get the data(value or address) from the "head".
   10. ...
   ```C
