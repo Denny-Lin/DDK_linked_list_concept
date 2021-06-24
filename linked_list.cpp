@@ -32,11 +32,15 @@ void delete_first_node(node_t* head){
 
 void delete_current_node(node_t* head,int val){
 
-	for(int i=0;i<val-2;i++){//until prev
+	for(int i=0;i<val-2;i++){//until prev node
 		head=head->next;
 	}
+	
+	node_t* tmp=head->next;//current node will be deleted
 		
-	head->next=head->next->next;
+	head->next=tmp->next;//next node
+	
+	free(tmp);
 }
 
 
