@@ -89,8 +89,10 @@ int main(){
  	print_linked_list(head);
  	 
  	delete_current_node(head,1); 
- 	//delete_current_node(head,2);
- 	//delete_current_node(head,3);
+ 	
+ 	print_linked_list(head);
+ 	
+ 	delete_current_node(head,3);
  	
  	print_linked_list(head);
 
