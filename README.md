@@ -15,7 +15,7 @@ It is a sample linked list.
   10. ...
   ```C
   void delete_first_node(node_t* head){
-    if(head==NULL) return;
+    //if(head==NULL) return;
     
     node_t* tmp=head;
 
@@ -23,9 +23,33 @@ It is a sample linked list.
     free(head);
     *head=*tmp;
   }
+  
+  delete_first_node(head);
   ```
 * Smart people use the trick below:<br>  
-![image](https://user-images.githubusercontent.com/67073582/123027528-8c19d300-d410-11eb-9faf-719d9f681bf3.png)
+![image](https://user-images.githubusercontent.com/67073582/123205707-f86a0480-d4ec-11eb-8286-1bb575cbf1ca.png) <br>
+
+* So... we are smart, we coulud change the code to:
+ ```C
+ void delete_first_node(node_t** head) {
+    node* tmp = *head;
+    *head = (*head)->next; 
+    free(tmp); 
+}
+
+delete_first_node(&head);
+```
+or
+ ```C
+ void delete_first_node(node_t* &head) {
+    node* tmp = head;
+    head = head->next;   
+    free(tmp); 
+}
+
+delete_first_node(head);
+```
+
 
   
 
