@@ -20,7 +20,7 @@ It is a sample linked list.
     node_t* tmp=head;
 
     tmp=tmp->next;
-    free(head);
+    //free(head);
     *head=*tmp;
   }
   
