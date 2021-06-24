@@ -23,11 +23,10 @@ void add_last_node(node_t* head,int val){
 	head->next=node;
 }
 
-void delete_first_node(node_t* head){
-	node_t* tmp = head->next;
-		
-	*head=*(head->next);	
-	free(tmp);
+void delete_first_node(node* &head) {
+    node *tobedeleted = head;
+    head = head->next;   // head is the next element
+    free(tobedeleted);  // delete the old head
 }
 
 void delete_current_node(node_t* head,int val){
