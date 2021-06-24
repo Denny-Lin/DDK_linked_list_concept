@@ -41,15 +41,18 @@ void delete_current_node(node_t* head,int val){
 
 	for(int i=0;i<val-2;i++){//until prev node
 		head=head->next;
+		
+		if(head->next==NULL){//over length
+			return;
+		}
 	}
-	
+		
 	node_t* tmp=head->next;//current node will be deleted
 		
 	head->next=tmp->next;//next node
 	
 	free(tmp);
 }
-
 
 void delete_last_node(node_t* head){
 	while(head->next->next){
@@ -92,7 +95,7 @@ int main(){
  	
  	print_linked_list(head);
  	
- 	delete_current_node(head,3);
+ 	delete_current_node(head,6);//test for over length
  	
  	print_linked_list(head);
 
