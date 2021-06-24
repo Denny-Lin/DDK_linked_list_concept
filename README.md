@@ -1,5 +1,5 @@
 # DDK_linked_list_concept
-It is a sample linked list.
+I talk about what the trick of double pointer in linked list.
 
 * we can code linked_list in a few minitues.
 * The rules are bellow:
