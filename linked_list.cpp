@@ -26,9 +26,9 @@ void delete_first_node(node_t* head){
 	node_t* tmp=tmp->next;
 	
 	if(head==NULL) return;
-
-	free(tmp);
+	
 	*head=*tmp;
+	free(tmp);
 }
  
 void delete_last_node(node_t* head){
