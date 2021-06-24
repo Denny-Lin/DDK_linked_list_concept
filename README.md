@@ -18,7 +18,7 @@ It is a sample linked list.
   7. Because "node_t* head" means "head is a pointer to node_t".
   8. This "head" saves the first memory address of the structure "node_t". 
   9. We use "* " to get the data(value or address) from the "head".
-  10. ...
+  10. so the sample code could be below: 
   <br></br>
   ```C
   void delete_first_node(node_t* head){
