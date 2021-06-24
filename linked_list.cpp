@@ -24,24 +24,25 @@ void add_last_node(node_t* head,int val){
 }
 
 void delete_first_node(node* &head) {
-    node *tobedeleted = head;
-    head = head->next;   // head is the next element
-    free(tobedeleted);  // delete the old head
+    node *tmp = head;
+    head = head->next; 
+    free(tmp); 
 }
 //delete_first_node(head);
 
 /*
 void delete_first_node(node** head) {
-    node *tobedeleted = *head;
-    *head = (*head)->next;   // head is the next element
-    free(tobedeleted);  // delete the old head
+    node *tmp = *head;
+    *head = (*head)->next;
+    free(tmp);
 }
 */
 //delete_first_node(&head);
 
 
-void delete_current_node(node_t* head,int val){
-
+void delete_current_node(node_t* &head,int val){
+//void delete_current_node(node_t** head,int val){
+	
 	if(head==NULL) return ;
 
 	if(val-2<0){
