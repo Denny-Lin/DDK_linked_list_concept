@@ -49,6 +49,7 @@ or
 
 delete_first_node(head);
 ```
+* This trick means we get the address of head, not the value it stores.
 
 
   
