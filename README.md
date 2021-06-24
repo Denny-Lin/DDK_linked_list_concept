@@ -1,4 +1,4 @@
-# DDK_linked_list_sample
+# DDK_linked_list_concept
 It is a sample linked list.
 
 * we can code linked_list in a few minitues.
