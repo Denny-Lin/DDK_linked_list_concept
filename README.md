@@ -17,8 +17,7 @@ It is a sample linked list.
   void delete_first_node(node_t* head){
     //if(head==NULL) return;
     
-    node_t* tmp=head;
-    tmp=tmp->next;  
+    node_t* tmp=head->next;  
     *head=*tmp;
     free(tmp);
   }
