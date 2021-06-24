@@ -18,10 +18,9 @@ It is a sample linked list.
     //if(head==NULL) return;
     
     node_t* tmp=head;
-
-    tmp=tmp->next;
-    //free(head);
+    tmp=tmp->next;  
     *head=*tmp;
+    free(tmp);
   }
   
   delete_first_node(head);
