@@ -27,8 +27,8 @@ It is a sample linked list.
 * Smart people use the trick below:<br>  
 ![image](https://user-images.githubusercontent.com/67073582/123205707-f86a0480-d4ec-11eb-8286-1bb575cbf1ca.png) <br>
 
-* We can see that the function get the value 2008, but what we want to do is to change the value but is on the address #4020.
-* The function get the value but putting on the local address #????, which is not #4020. 
+* We can see that the function get the value 2008, but what we want to do is to change the value which is on the address #4020.
+* The function get the value but putting on the local address #???? which is not #4020. 
 
 * So... we are smart, we coulud change the code to:
  ```C
