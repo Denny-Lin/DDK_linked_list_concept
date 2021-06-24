@@ -26,7 +26,7 @@ void add_last_node(node_t* head,int val){
 void delete_first_node(node_t* head){
 	node_t* tmp = head->next;
 		
-	*head=*tmp;	
+	*head=*(head->next);	
 	free(tmp);
 }
 
