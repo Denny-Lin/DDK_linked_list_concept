@@ -32,6 +32,13 @@ void delete_first_node(node_t* head){
 
 void delete_current_node(node_t* head,int val){
 
+	if(head==NULL) return ;
+
+	if(val-2<0){
+		delete_first_node(head);
+		return ;
+	}
+
 	for(int i=0;i<val-2;i++){//until prev node
 		head=head->next;
 	}
@@ -81,8 +88,9 @@ int main(){
  	
  	print_linked_list(head);
  	 
- 	delete_current_node(head,2);
- 	delete_current_node(head,3);
+ 	delete_current_node(head,1); 
+ 	//delete_current_node(head,2);
+ 	//delete_current_node(head,3);
  	
  	print_linked_list(head);
 
