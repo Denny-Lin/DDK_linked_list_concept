@@ -18,7 +18,8 @@ It is a sample linked list.
     //if(head==NULL) return;
     
     *head=*(head->next);
-    //We can not free the "original head" from main because we do not know what the address that main puts the "head" on.
+    //We can not free the address of the "original head" from main() because we do not know what the address that main() puts the "head" on.
+    //Main() should free() itself.
   }
   
   delete_first_node(head);
