@@ -47,9 +47,9 @@ void delete_current_node(node_t* head,int val){
 		}
 	}
 		
-	node_t* tmp=head->next;//current node will be deleted
+	node_t* tmp=head->next;//the node you want to delete
 		
-	head->next=tmp->next;//next node
+	head->next=head->next->next;//next node
 	
 	free(tmp);
 }
@@ -90,14 +90,15 @@ int main(){
  	delete_first_node(head);
  	
  	print_linked_list(head);
- 	 
- 	delete_current_node(head,1); 
+ 	
+	delete_current_node(head,2); 
+ 	
+ 	print_linked_list(head); 
+	  
+ 	delete_current_node(head,6);//test over length 
  	
  	print_linked_list(head);
  	
- 	delete_current_node(head,6);//test for over length
- 	
- 	print_linked_list(head);
 
 	getchar();
 	return 0;
