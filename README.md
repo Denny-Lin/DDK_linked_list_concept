@@ -59,7 +59,7 @@ or
 delete_first_node(head);
 ```
 * This trick means we get the address of head, not the value it stores.
-* The other concept is all of them are "called by value"; if a teacher say "called by address", you can just leave the classroom.
+* The other concept is all of them are "called by value"; if a teacher say "called by address", you can just leave the classroom.<br>
 
 * Next, if we want to delete the second, third or fourth node, we can do below:
  ```C
