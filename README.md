@@ -61,6 +61,24 @@ delete_first_node(head);
 * This trick means we get the address of head, not the value it stores.
 * The other concept is all of them are "called by value"; if a teacher say "called by address", you can just leave the classroom.
 
+* Next, if we want to delete the second, third or fourth node, we can do below:
+ ```C
+void delete_current_node(node_t** head,int val){
+	node_t* tmp= *head;
+  //We use tmp to traverse.
+	node_t* prev;
+	
+	for(int i=0;i<val-1;i++){
+		prev=tmp;
+		tmp=tmp->next;
+	}
+	
+	prev->next=tmp->next;
+	free(tmp);
+}
+
+delete_current_node(&head,3);
+```
 
   
 
