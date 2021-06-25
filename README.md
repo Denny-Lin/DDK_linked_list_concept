@@ -81,7 +81,8 @@ void delete_current_node(node_t** head,int val){
 
 delete_current_node(&head,3);
 ```
-* We can get the address of the specific node from the "node->nxt" excpet the first node, but why do we use double pointer here?
+* We can using one pointer to get the address of the specific node from the "node->next" excpet the first node.
+* However, why do we use double pointer here? <br>
 * The answer is we can merge both "delete_first_node() and delete_current_node()" to be one function "delete_node()".
   
 
