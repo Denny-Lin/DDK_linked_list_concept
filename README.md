@@ -20,18 +20,18 @@ I talk about what the tricks of double pointer are in linked list.
   9. We use "* " to get the data(value or address) from the "head".
   10. so the sample code could be below: 
   <br></br>
-  ```C
-  void delete_first_node(node_t* head){
-    //if(head==NULL) return;
-    
-    *head=*(head->next);
-    //We can "not" free the address of the "original head" from main(). 
-    //Because we do not know the address that main() puts the "head" on.
-    //Main() should free() itself.
-  }
-  
-  delete_first_node(head);
-  ```
+     ```C
+     void delete_first_node(node_t* head){
+       //if(head==NULL) return;
+
+      *head=*(head->next);
+      //We can "not" free the address of the "original head" from main(). 
+      //Because we do not know the address that main() puts the "head" on.
+      //Main() should free() itself.
+    }
+
+      delete_first_node(head);
+    ```
 * Smart people use the trick below:<br>  
 ![image](https://user-images.githubusercontent.com/67073582/123205707-f86a0480-d4ec-11eb-8286-1bb575cbf1ca.png) <br>
 
