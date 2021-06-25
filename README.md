@@ -85,5 +85,6 @@ delete_current_node(&head,3);
 * However, why do we use double pointer here?<br><br>
 
 * The answer is we can merge both "delete_first_node() and delete_current_node()" to be one function "delete_node()".
+* Another thing we should consider is the border, the first and final NULL.
   
 
