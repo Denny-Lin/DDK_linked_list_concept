@@ -69,12 +69,14 @@ void delete_current_node(node_t** head,int val){
 	node_t* prev;
 	
 	for(int i=0;i<val-1;i++){
-		prev=tmp;
-		tmp=tmp->next;
+		prev=tmp;//1
+		tmp=tmp->next;//2
 	}
 	
-	prev->next=tmp->next;
+	prev->next=tmp->next;//3
 	free(tmp);
+	
+	//123 can be translated to "tmp->next=tmp->next->next".
 }
 
 delete_current_node(&head,3);
