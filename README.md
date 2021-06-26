@@ -86,5 +86,10 @@ delete_current_node(&head,3);
 
 * The answer is we can merge both "delete_first_node() and delete_current_node()" to be one function "delete_node()".
 * Another thing we should consider is the border, the first and final NULL.
+*
+## How to malloc a node in linkedlist?
+* let us use the same trick.
+* double pointer or "pointer to pointer"
+* ....
   
 
