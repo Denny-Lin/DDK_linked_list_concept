@@ -90,6 +90,17 @@ delete_current_node(&head,3);
 ## How to malloc a node in linkedlist?
 * let us use the same trick.
 * double pointer or "pointer to pointer"
-* ....
+```C
+node_t* create_node(int val){
+	node_t* node=(node_t*)malloc(sizeof(node_t));
+	
+	node->val=val;
+	node->next=NULL;
+	
+}
+```
+* This style is not good, but I will not provide another type; you should think of yourself just like me.
+* Many years ago, I found this trick of double pointer by myself when I wanted to create a first node in linked liset.
+* ...
   
 
