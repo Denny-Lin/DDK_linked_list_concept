@@ -102,7 +102,7 @@ node_t* create_node(int val){
 * This style is not good, but I will not provide another type; you should think of yourself just like me.
 * Many years ago, I found this trick of double pointer by myself when I wanted to create a first node in linked liset.
 * ...
-* Well, I give you haha.
+* 06/28/2021 Well, I give you haha.
 * ...
   
 
